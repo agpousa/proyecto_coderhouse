@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/logo-pestaña.svg">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <title>City Hotel Boutique</title>
+</head>
+<body>
+<!-- INICIO DEL HEADER -->
+    <header class="header">
+        <a href="./index.html"><img class="header__logo" src="./Images/logo-hotel.svg" alt="City Hotel Boutique"></a>
+        <nav class="header__nav">
+            <ul class="header__pages">
+                <li><a class="header__pages__link main--link" href="./index.html">HOME</a></li>
+                <li><a class="header__pages__link" href="./Pages/Habitaciones.html">HABITACIONES</a></li>
+                <li><a class="header__pages__link" href="./Pages/Servicios.html">SERVICIOS</a></li>
+                <li><a class="header__pages__link" href="./Pages/Galeria.html">GALERIA</a></li>
+                <li><a class="header__pages__link" href="./Pages/Contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <section class="header__social">
+            <a href=""><img class="header__social__link" src="./Images/instagram.svg" alt="instagram"></a>
+            <a href=""><img class="header__social__link" src="./Images/facebook.svg" alt="facebook"></a>
+            <a href=""><img class="header__social__link" src="./Images/tripadvisor.svg" alt="tripadvisor"></a>
+        </section>
+    </header> 
+<!-- FIN DEL HEADER -->
+<!-- INICIO MAIN DE LA PAGINA -->
+    <main>
+        <img class="home--top--img" src="./Images/Header-home.jpg" alt="imagen home city hotel Boutique">
+        <h1 class="title text--yellow">CITY HOTEL BOUTIQUE</h1>
+        <H2 class="title text--yellow">Tu lugar en la ciudad</H2>
+        <section class="form">
+            <form class="form__checkin" action="" method="post">
+                <label class="text--white" for="check-in">Check In</label>
+                <input type="date" name="check-in" id="check-in" required>
+                <label class="text--white" for="check-out">Check Out</label>
+                <input type="date" name="check-out" id="check-out" required>
+                <label class="text--white" for="guest">Huéspedes</label>
+                <input type="number" name="guest" id="guest" required>
+                <button type="submit">RESERVAR</button>
+            </form>
+        </section>
+        <section>
+            <article class="nosotros">
+                <div class="nosotros__text">
+                    <h3 class="subtitle text--yellow">CITY HOTEL BOUTIQUE</h3>
+                    <h4 class="subtitle text--yellow">Buenos Aires, Argentina</h4><br>
+                        <p>
+                            Ubicado en el centro de la capital, el Hotel City es una manifestación de la pasión por la historia, los viajes y el buen gusto. Un espacio que busca resumir la autenticidad de la ciudad, donde la comodidad va de la mano con el lujo y la sensibilidad en el servicio. Un sitio en el que cualquiera se siente invitado de honor, con la cordialidad y la cercanía que caracteriza a los porteños.
+                        </p><br>
+                        <p>
+                            Su ubicación lo transforma en un enclave estratégico para conocer Buenos Aires. Situado a solo 1 calle de la Plaza Principal de la ciudad, Catedral y Cabildo, y a 4 del obelisco.
+                        </p><br>
+                        <p>
+                            El hotel cuenta con pileta al aire libre, pileta climatizada y un SPA con circuito de aguas único en la región. También dispone de un restaurante propio, y servicios como estacionamiento (sujeto a disponibilidad – requiere reserva previa), Wifi libre en todo el edificio, desayuno, y muchos otros detalles que garantizan un servicio cuidado y dedicado. 
+                        </p>
+                </div>
+                <img src="./Images/Hotel-imagen.jpg" alt="City Hotel Boutique">
+            </article>
+        </section>
+        <h2 class="title text--yellow">NUESTRO RESTAURANTE</h2>
+        <section>
+            <article class="restaurante">  
+                <div class="restaurante__text">
+                    <h3 class="subtitle text--yellow">MEZCAL</h3><br>
+                        <p>
+                            Mezcal propone un cocina donde el producto es el protagonista principal, bajo la premisa de que todo lo ofrecido tiene que ser producido en la propia casa, con insumos frescos, orgánicos y de temporada, provenientes de productores locales.
+                        </p><br>
+                        <p>
+                            La apuesta es lograr sabores cuidados y reales, y recuperar una alimentación centrada en lo sano y lo natural. Bruma es la Tierra, es el pastizal crudo y el atardecer rojo. Un lugar donde se intenta llegar a la nostalgia y el deseo de vivir una experiencia única.
+                        </p>
+                </div>
+                <img src="./Images/restaurante-mezcal.png" alt="restaurante mezcal">
+            </article>
+        </section>
+        <h2 class="title text--yellow">LOS MEJORES SERVICIOS EN UN SOLO LUGAR</h2>
+        <section class="container--card">
+            <article class="card">
+                <img class="card__img" src="./Images/card-spa.jpg" alt="spa">
+                <h3 class="card__title">SPA</h3>
+                    <p class="card__text">
+                        Propuesta exclusivas diseñadas por nuestro spa manager, donde se combinan la técnicas y tratamientos de los mejores spas del mundo.
+                    </p>
+            </article>
+            <article class="card">
+                <img class="card__img" src="./Images/card-picina.jpg" alt="picina">
+                <h3 class="card__title">PICINA</h3>
+                    <p class="card__text">
+                        Un espacio diseñado para que nuestros huéspedes se sientan como en su casa teniendo a su disposición una fabulosa picina al aire libre la cual es climatizada en invierno.                  
+                    </p>
+            </article>
+            <article class="card">
+                <img class="card__img" src="./Images/card-sala.jpg" alt="sala de reuniones">
+                <h3 class="card__title">SALA DE REUNIONES</h3>
+                    <p class="card__text">
+                        Propuesta exclusivas diseñadas por nuestro spa manager, donde se combinan la técnicas y tratamientos de los mejores spas del mundo.
+                    </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="title text--yellow">RESEÑAS</h2>
+            <article class="reviews">
+                    <div class="reviews_text ">
+                        <p class="text--white">
+                            El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
+                        </p><br>
+                        <p class="text--white">
+                            Alfredo Gomez <br>
+                            Google
+                        </p> 
+                    </div>
+            </article>
+        </section>
+    </main>
+<!-- FIN MAIN DE LA PAGINA -->
+<!-- INICIO DEL FOOTER -->
+    <footer class="footer">
+        <section class="footer__container">
+            <article class="footer__info">
+                <a href="./index.html"><img class="footer__logo" src="./Images/logo-hotel.svg" alt="City Hotel Boutique"></a>
+                <div class="footer__info__contact">
+                    <h2 class="subtitle text--yellow footer__title">CANALES DE CONTACTO</h2>
+                    <ul class="footer__info__contact__link">
+                        <li><a class="footer__pages__link" href="">Av. de Mayo 1496</a></li>
+                        <li><a class="footer__pages__link" href="">+54 (911) 3511-5453</a></li>
+                        <li><a class="footer__pages__link" href="">info@cityhotel.com.ar</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info__social">
+                    <a href=""><img class="footer__social__link" src="./Images/instagram.svg" alt="instagram"></a>
+                    <a href=""><img class="footer__social__link" src="./Images/facebook.svg" alt="facebook"></a>
+                    <a href=""><img class="footer__social__link" src="./Images/tripadvisor.svg" alt="tripadvisor"></a>
+                </div>
+            </article>
+                <nav class="footer__nav">
+                    <ul class="footer__nav__pages">
+                        <li><a class="footer__pages__link main--link" href="./index.html">HOME</a></li>
+                        <li><a class="footer__pages__link" href="./Pages/Habitaciones.html">HABITACIONES</a></li>
+                        <li><a class="footer__pages__link" href="./Pages/Servicios.html">SERVICIOS</a></li>
+                        <li><a class="footer__pages__link" href="./Pages/Galeria.html">GALERIA</a></li>
+                        <li><a class="footer__pages__link" href="./Pages/Contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav> 
+                <h3 class="text--yellow">Diseñado por Agustin Pousa</h3>  
+        </section>   
+    </footer>
+<!-- FIN DEL FOOTER -->
+</body>
+</html>
