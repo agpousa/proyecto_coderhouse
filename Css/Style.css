@@ -1,21 +1,65 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Inter:wght@100&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
+    box-sizing: border-box;   
+}
+
+:root {
+    /*colors*/
+    --primary: #F8B500;
+    --secondary: #54585A;
+    --base: #ffffff;
+
+    /*spacings*/
+    --spacings-small: ;
+
+    /*font-family*/
+    --font-title: 'Cormorant', serif;
+    --font-text: 'Inter', sans-serif;
+
+    /*font-sizes*/
+    --text-small: 1.6rem;
+    --text-medium: 4rem;
+    --text-larg: ;
+
+}
+
+/*NORMALIZE*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-text);
+    font-weight: bold;
+    font-size: var(--text-small);
     color: #54585A;
 }
 
-li {
-    list-style: none;
-    
+a {
+    text-decoration: none;
 }
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* GENERAL */
 
 .title{
     text-align: center;
     font-family: 'Cormorant', serif;
-    font-size: 30px;
+    font-size: var(--text-medium);
     font-weight: bold;
 }
 
@@ -28,9 +72,7 @@ li {
 .form{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
-    
+    justify-content: center;   
 }
 
 .form__checkin{
@@ -43,8 +85,6 @@ li {
     margin: 2%;
     background-color: #54585A;
     border-radius: 15px;
-    
-
 }
 
 .top--img{
@@ -52,33 +92,25 @@ li {
 }
 
 .text--yellow{
-    color: #F8B500;
+    color: var(--primary);
 }
 
 .text--white{
-    color: #ffffff;
+    color: var(--base);
 }
-
-/*FONTS*/
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Inter:wght@100&display=swap');
-
 
 /*HEADER STYLE*/
 
 .header{
-    background-color: #54585A;
+    background-color: var(--secondary);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .header__logo{
-    height: 55px;
+    height: 5.5rem;
 }
 
 .header__nav {
@@ -88,47 +120,38 @@ li {
 .header__pages {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-   
-    
+    justify-content: space-between;   
 }
 
 .header__pages__link {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 12px;
+    color: var(--base);
+    font-size: 1.2rem;
 
 }
 
 .main--link {
-    color: #F8B500;
+    color: var(--primary);
 }
 
 .header__social__link {
-    height: 25px;
-
+    height: 2.5rem;
 }
-
-
-
-
 
 /* MAIN HOME STYLE*/
 
 .home--top--img{
     width: 100%;
-
 }
 
 .nosotros{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-around;
     align-items:center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    gap: 1em;
+    margin: 5em 0;
 }
 
 .nosotros__text{
@@ -137,18 +160,16 @@ li {
     text-align: left;
     height: 100%;
     width: 40%;
-
 }
 
 .restaurante{
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content:space-around;
     align-items:center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    gap: 1em;
+    margin: 5em 0;
 }
 
 .restaurante__text{
@@ -157,13 +178,14 @@ li {
     text-align: left;
     height: 100%;
     width: 34%;
-
 }
 
 .container--card{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5% 15%;
+    gap: 1em;
+    margin: 5em;
 }
 
 .card{
@@ -171,63 +193,69 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 290px;
-    height: 400px;
+    width: 29rem;
+    height: 40rem;
     margin-bottom: 10%;
 }
 
 .card__img{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 
 .card__title{
-    color: #F8B500;
-    font-family: 'Cormorant', serif;
+    color: var(--primary);
+    font-family: var(--font-title);
 }
 
 .card__text{
     text-align: center;
-    color: #ffffff;
-    font-size: 15px;
-    margin: 10% 10%;
+    color: var(--base);
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10% 10%;
 }
 
 .reviews{
-    padding: 5% 25%;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .reviews_text{
-    background-color: #54585A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary);
+    height: 20rem;
+    width: 70rem;
+    margin: 5rem auto;
     text-align: center;
-    padding: 5% 0;
     border-radius: 15px;
-    
+    padding: 2em;  
 }
+
 /*MAIN HABITACIONES STYLE*/
 
 .room{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content:space-between;
     align-items:center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    gap: 1em;
+    margin: 5em 0;
 }
 
 .room__reverse{
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content:space-between;
     align-items:center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%; 
+    gap: 1em;
+    margin: 5em 0;
 }
 
 .room__text{
@@ -238,35 +266,31 @@ li {
     width: 40%;
 }
 
-
-
-
 /*MAIN SERVICIOS STYLE*/
 
 .service{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content:space-between;
     align-items:center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    gap: 1em;
+    margin: 5em 0;
 }
 
 .service__reverse{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%; 
+    gap: 1em;
+    margin: 5em 0; 
 }
 
 .service__text{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     text-align: left;
     height: 100%;
@@ -277,11 +301,8 @@ li {
 /*MAIN GALERIA STYLE*/
 
 .galery{
-margin: 5%;
+    margin: 5%;
 }
-
-
-
 
 /*MAIN CONTACTO STYLE*/
 
@@ -293,9 +314,9 @@ margin: 5%;
 }
 
 .contact{
-display: flex;
-justify-content: center;
-padding: 2%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
 }
 
 .contact__form{
@@ -308,23 +329,18 @@ padding: 2%;
     border-radius: 15px;
 }
 
-
-
 /*FOOTER STYLE*/
+
 .footer {
     background-color: #54585A;
-    padding: 3% 0;
-    
+    padding: 3% 0;   
 }
 
 .footer__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
-
 
 .footer__title{
     font-size: 20px;
@@ -344,12 +360,8 @@ padding: 2%;
     height: 90px;
 }
 
-
-
-
 .footer__info__contact{
     text-align: center;
-
 }
 
 .footer__nav{
@@ -371,7 +383,6 @@ padding: 2%;
     text-decoration: none;
     color: #ffffff;
     font-size: 12px;
-
 }
 
 .main--link {
