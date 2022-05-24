@@ -2,33 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Inter:wght@100&display=swap');
 
+:root {
+/*colors*/
+--primary: #F8B500;
+--secondary: #54585A;
+--base: #ffffff;
+
+/*spacings*/
+--spacings-small: ;
+
+/*font-family*/
+--font-title: 'Cormorant', serif;
+--font-text: 'Inter', sans-serif;
+
+/*font-sizes*/
+--text-small: 1.6rem;
+--text-medium: 4rem;
+--text-larg: ;
+}
+
+/*NORMALIZE*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;   
 }
-
-:root {
-    /*colors*/
-    --primary: #F8B500;
-    --secondary: #54585A;
-    --base: #ffffff;
-
-    /*spacings*/
-    --spacings-small: ;
-
-    /*font-family*/
-    --font-title: 'Cormorant', serif;
-    --font-text: 'Inter', sans-serif;
-
-    /*font-sizes*/
-    --text-small: 1.6rem;
-    --text-medium: 4rem;
-    --text-larg: ;
-
-}
-
-/*NORMALIZE*/
 
 html {
     font-size: 62.5%;
@@ -105,6 +104,7 @@ main {
     background-color: var(--secondary);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -120,6 +120,7 @@ main {
 .header__pages {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;   
 }
 
@@ -127,7 +128,6 @@ main {
     text-decoration: none;
     color: var(--base);
     font-size: 1.2rem;
-
 }
 
 .main--link {
@@ -202,7 +202,6 @@ main {
     width: 100%;
     margin-bottom: 1.5rem;
 }
-
 
 .card__title{
     color: var(--primary);
@@ -301,16 +300,32 @@ main {
 /*MAIN GALERIA STYLE*/
 
 .galery{
-    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    margin: 5rem 10rem;
 }
 
 /*MAIN CONTACTO STYLE*/
 
 .contact1{
     display:flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items:center;
-    margin: 3% 30%;
+    gap: 5rem;
+    margin: 5rem 0;
+}
+
+.contact1 ul li {
+    text-align: center;
+    margin: 2rem;
+}
+
+.contact1__info {
+    color: var(--secondary);
 }
 
 .contact{
@@ -387,4 +402,181 @@ main {
 
 .main--link {
     color: #F8B500;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:600px){
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.form__checkin{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 5%;
+    background-color: #54585A;
+    border-radius: 15px;
+}
+
+/*HEADER STYLE*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__logo{
+    height: 10rem;
+    margin: 1rem 0;
+}
+
+.header__pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.header__pages__link {
+    font-size: 1.6rem;
+}
+
+.header__social__link {
+    display: none;
+}
+
+/* MAIN HOME STYLE*/
+
+.home--top--img{
+    width: 100%;
+}
+
+.nosotros__text{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.restaurante__text{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.nosotros__img {
+    width: 100%;
+    padding: 1rem;
+}
+
+.container--card{
+    margin: 1rem;
+}
+
+.reviews{
+    padding: 1rem;
+}
+
+/*MAIN HABITACIONES STYLE*/
+
+.room__text{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.room__img {
+    width: 100%;
+    padding: 1rem;
+}
+
+/*MAIN SERVICIOS STYLE*/
+
+.service__text{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.service__img {
+    width: 100%;
+    padding: 1rem;
+}
+
+/*MAIN GALERIA STYLE*/
+
+.galery{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5rem 0;
+}
+
+/*MAIN CONTACTO STYLE*/
+
+.contact1{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.contact__form{
+    background-color: #54585A;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+/*FOOTER STYLE*/
+
+.footer__logo {
+    margin: 1rem 0;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__info__contact__link{
+    flex-direction: column;
+    height: 9rem;
+}
+
+.footer__nav__pages{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.footer__social__link {
+    width: 3rem;
+}
+
 }
