@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Images/logo-pestaña.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../Css/Style.css">
     <title>SERVICIOS - City Hotel Boutique</title>
 </head>
@@ -34,7 +35,7 @@
         <h1 class="title text--yellow">SERVICIOS</h1>
         <section>
             <article class="service">
-                <div class="service__text">
+                <div class="service__text" data-aos="fade-right">
                     <h2 class="subtitle text--yellow">INCLUIDOS</h2><br>
                     <ul>
                         <li>-Desayuno Buffet</li>
@@ -50,10 +51,10 @@
                         <li>-Asesoramiento y asistencia en reservas de shows, restaurantes, teatros y excursiones</li>
                     </ul> 
                 </div>
-                <img class="service__img" src="../Images/Servicios-buffet-incluidos.jpg" alt="servicios incluidos">
+                <img class="service__img" data-aos="fade-left" src="../Images/Servicios-buffet-incluidos.jpg" alt="servicios incluidos">
             </article>
             <article class="service__reverse">
-                <div class="service__text">
+                <div class="service__text" data-aos="fade-left">
                     <h2 class="subtitle text--yellow">OPCIONALES</h2><br>
                     <ul>
                         <li>-Estacionamiento</li>
@@ -68,10 +69,10 @@
                         <li>-Agencia de viajes y Turismo</li>
                     </ul>
                 </div>
-                <img class="service__img" src="../Images/Servicios-tango-opcionales.jpg" alt="servicios OPCIONALES">  
+                <img class="service__img" data-aos="fade-right" src="../Images/Servicios-tango-opcionales.jpg" alt="servicios OPCIONALES">  
             </article>
             <article class="service">
-                <div class="service__text">
+                <div class="service__text" data-aos="fade-right">
                     <h2 class="subtitle text--yellow">SPA</h2><br>
                     <ul>
                         <li>-Tratamientos de belleza faciales y corporales</li>
@@ -84,7 +85,7 @@
                         <li>-Pequeña piscina</li>
                     </ul>
                 </div>
-                <img class="service__img" src="../Images/Servicios-spa.jpg" alt="servicios spa">
+                <img class="service__img" data-aos="fade-left" src="../Images/Servicios-spa.jpg" alt="servicios spa">
             </article>
         </section>
         <p class="title">Vivi una experiencia inolvidable <br>
@@ -134,5 +135,9 @@
         </section>   
     </footer>
 <!-- FIN DEL FOOTER -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

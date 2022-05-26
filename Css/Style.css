@@ -109,8 +109,14 @@ main {
     align-items: center;
 }
 
-.header__logo{
+.header__logo {
     height: 5.5rem;
+    padding: .1rem;
+    transition: all .1s linear;
+}
+
+.header__logo:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .header__nav {
@@ -128,6 +134,11 @@ main {
     text-decoration: none;
     color: var(--base);
     font-size: 1.2rem;
+    transition: all .1s linear;
+}
+
+.header__pages__link:hover {
+    color: var(--primary);
 }
 
 .main--link {
@@ -136,6 +147,11 @@ main {
 
 .header__social__link {
     height: 2.5rem;
+    transition: all .1s linear;
+}
+
+.header__social__link:hover {
+    transform: scale(1.1, 1.1);
 }
 
 /* MAIN HOME STYLE*/
@@ -196,6 +212,12 @@ main {
     width: 29rem;
     height: 40rem;
     margin-bottom: 10%;
+    transition: all .3s linear;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 10px var(--secondary);
 }
 
 .card__img{
@@ -232,7 +254,8 @@ main {
     margin: 5rem auto;
     text-align: center;
     border-radius: 15px;
-    padding: 2em;  
+    padding: 2em;
+    box-shadow: 0px 0px 10px #54585A;
 }
 
 /*MAIN HABITACIONES STYLE*/
@@ -325,7 +348,12 @@ main {
 }
 
 .contact1__info {
-    color: var(--secondary);
+    color: black;
+    transition: all .1s linear;
+}
+
+.contact1__info:hover {
+    color: var(--primary);
 }
 
 .contact{
@@ -398,6 +426,11 @@ main {
     text-decoration: none;
     color: #ffffff;
     font-size: 12px;
+    transition: all .1s linear;
+}
+
+.footer__pages__link:hover {
+    color: var(--primary);
 }
 
 .main--link {

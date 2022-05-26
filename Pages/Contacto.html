@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Images/logo-pestaña.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../Css/Style.css">
     <title>CONTACTO - City Hotel Boutique</title>
 </head>
@@ -35,7 +36,7 @@
         <section>
             <article>
                 <h2 class="title text--yellow">CONTACTATE CON NOSOTROS</h2>
-                <section class="contact1">
+                <section class="contact1" data-aos="zoom-in">
                     <div>
                         <img src="../Images/logo-hotel.svg" alt="city hotel Boutique">
                     </div>
@@ -47,7 +48,7 @@
                         </ul>
                     </div>
                 </section>
-                <section class="contact">
+                <section class="contact" data-aos="zoom-in">
                     <form class="contact__form" action="" method="post">
                         <label class="text--white" for="name">Nombre:</label>
                         <input type="text" name="name" id="name" required><br><br>
@@ -97,5 +98,9 @@
         </section>   
     </footer>
 <!-- FIN DEL FOOTER -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Images/logo-pestaña.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./Css/Style.css">
     <title>City Hotel Boutique</title>
 </head>
@@ -46,7 +47,7 @@
         </section>
         <section>
             <article class="nosotros">
-                <div class="nosotros__text">
+                <div class="nosotros__text" data-aos="fade-right">
                     <h3 class="subtitle text--yellow">CITY HOTEL BOUTIQUE</h3>
                     <h4 class="subtitle text--yellow">Buenos Aires, Argentina</h4><br>
                         <p>
@@ -59,13 +60,13 @@
                             El hotel cuenta con pileta al aire libre, pileta climatizada y un SPA con circuito de aguas único en la región. También dispone de un restaurante propio, y servicios como estacionamiento (sujeto a disponibilidad – requiere reserva previa), Wifi libre en todo el edificio, desayuno, y muchos otros detalles que garantizan un servicio cuidado y dedicado. 
                         </p>
                 </div>
-                <img class="nosotros__img" src="./Images/Hotel-imagen.jpg" alt="City Hotel Boutique">
+                <img class="nosotros__img" data-aos="fade-left" src="./Images/Hotel-imagen.jpg" alt="City Hotel Boutique">
             </article>
         </section>
         <h2 class="title text--yellow">NUESTRO RESTAURANTE</h2>
         <section>
             <article class="restaurante">  
-                <div class="restaurante__text">
+                <div class="restaurante__text" data-aos="fade-left">
                     <h3 class="subtitle text--yellow">MEZCAL</h3><br>
                         <p>
                             Mezcal propone un cocina donde el producto es el protagonista principal, bajo la premisa de que todo lo ofrecido tiene que ser producido en la propia casa, con insumos frescos, orgánicos y de temporada, provenientes de productores locales.
@@ -74,26 +75,26 @@
                             La apuesta es lograr sabores cuidados y reales, y recuperar una alimentación centrada en lo sano y lo natural. Bruma es la Tierra, es el pastizal crudo y el atardecer rojo. Un lugar donde se intenta llegar a la nostalgia y el deseo de vivir una experiencia única.
                         </p>
                 </div>
-                <img class="nosotros__img" src="./Images/restaurante-mezcal.png" alt="restaurante mezcal">
+                <img class="nosotros__img" data-aos="fade-right" src="./Images/restaurante-mezcal.png" alt="restaurante mezcal">
             </article>
         </section>
         <h2 class="title text--yellow">LOS MEJORES SERVICIOS EN UN SOLO LUGAR</h2>
         <section class="container--card">
-            <article class="card">
+            <article class="card" data-aos="flip-left">
                 <img class="card__img" src="./Images/card-spa.jpg" alt="spa">
                 <h3 class="card__title">SPA</h3>
                     <p class="card__text">
                         Propuesta exclusivas diseñadas por nuestro spa manager, donde se combinan la técnicas y tratamientos de los mejores spas del mundo.
                     </p>
             </article>
-            <article class="card">
+            <article class="card" data-aos="flip-left">
                 <img class="card__img" src="./Images/card-picina.jpg" alt="picina">
                 <h3 class="card__title">PICINA</h3>
                     <p class="card__text">
                         Un espacio diseñado para que nuestros huéspedes se sientan como en su casa teniendo a su disposición una fabulosa picina al aire libre la cual es climatizada en invierno.                  
                     </p>
             </article>
-            <article class="card">
+            <article class="card" data-aos="flip-left">
                 <img class="card__img" src="./Images/card-sala.jpg" alt="sala de reuniones">
                 <h3 class="card__title">SALA DE REUNIONES</h3>
                     <p class="card__text">
@@ -104,7 +105,7 @@
         <section>
             <h2 class="title text--yellow">RESEÑAS</h2>
             <article class="reviews">
-                    <div class="reviews_text ">
+                    <div class="reviews_text " data-aos="zoom-in">
                         <p class="text--white">
                             El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
                         </p><br>
@@ -149,5 +150,9 @@
         </section>   
     </footer>
 <!-- FIN DEL FOOTER -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
