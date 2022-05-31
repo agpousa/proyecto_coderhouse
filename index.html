@@ -5,36 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Images/logo-pestaña.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./Css/Style.css">
     <title>City Hotel Boutique</title>
 </head>
 <body>
 <!-- INICIO DEL HEADER -->
-    <header class="header">
-        <a href="./index.html"><img class="header__logo" src="./Images/logo-hotel.svg" alt="City Hotel Boutique"></a>
-        <nav class="header__nav">
-            <ul class="header__pages">
-                <li><a class="header__pages__link main--link" href="./index.html">HOME</a></li>
-                <li><a class="header__pages__link" href="./Pages/Habitaciones.html">HABITACIONES</a></li>
-                <li><a class="header__pages__link" href="./Pages/Servicios.html">SERVICIOS</a></li>
-                <li><a class="header__pages__link" href="./Pages/Galeria.html">GALERIA</a></li>
-                <li><a class="header__pages__link" href="./Pages/Contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <section class="header__social">
-            <a href=""><img class="header__social__link" src="./Images/instagram.svg" alt="instagram"></a>
-            <a href=""><img class="header__social__link" src="./Images/facebook.svg" alt="facebook"></a>
-            <a href=""><img class="header__social__link" src="./Images/tripadvisor.svg" alt="tripadvisor"></a>
-        </section>
-    </header> 
+    <header class="navbar navbar-expand-lg header--color">
+        <div class="container-fluid header__nav container">
+            <a class="navbar-brand" href="./index.html"><img class="header__logo" src="./Images/logo-hotel.svg" alt="City Hotel Boutique"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto header__pages">
+                    <li class="nav-item"><a class="header__pages__link nav-link main--link" href="./index.html">HOME</a></li>
+                    <li class="nav-item"><a class="header__pages__link nav-link" href="./Pages/Habitaciones.html">HABITACIONES</a></li>
+                    <li class="nav-item"><a class="header__pages__link nav-link" href="./Pages/Servicios.html">SERVICIOS</a></li>
+                    <li class="nav-item"><a class="header__pages__link nav-link" href="./Pages/Galeria.html">GALERIA</a></li>
+                    <li class="nav-item"><a class="header__pages__link nav-link" href="./Pages/Contacto.html">CONTACTO</a></li>
+                </ul>
+                <section class="header__social d-flex flex-row justify-content-center">
+                    <a href=""><img class="header__social__link" src="./Images/instagram.svg" alt="instagram"></a>
+                    <a href=""><img class="header__social__link" src="./Images/facebook.svg" alt="facebook"></a>
+                    <a href=""><img class="header__social__link" src="./Images/tripadvisor.svg" alt="tripadvisor"></a>
+                </section>
+            </div>
+        </div>
+    </header>
 <!-- FIN DEL HEADER -->
 <!-- INICIO MAIN DE LA PAGINA -->
     <img class="home--top--img" src="./Images/Header-home.jpg" alt="imagen home city hotel Boutique">   
     <main>
         <h1 class="title text--yellow">CITY HOTEL BOUTIQUE</h1>
         <H2 class="title text--yellow">Tu lugar en la ciudad</H2>
-        <section class="form">
+        <section class="form1">
             <form class="form__checkin" action="" method="post">
                 <label class="text--white" for="check-in">Check In</label>
                 <input type="date" name="check-in" id="check-in" required>
@@ -60,13 +66,13 @@
                             El hotel cuenta con pileta al aire libre, pileta climatizada y un SPA con circuito de aguas único en la región. También dispone de un restaurante propio, y servicios como estacionamiento (sujeto a disponibilidad – requiere reserva previa), Wifi libre en todo el edificio, desayuno, y muchos otros detalles que garantizan un servicio cuidado y dedicado. 
                         </p>
                 </div>
-                <img class="nosotros__img" data-aos="fade-left" src="./Images/Hotel-imagen.jpg" alt="City Hotel Boutique">
+                <img class="nosotros__img" data-aos="fade-right" src="./Images/Hotel-imagen.jpg" alt="City Hotel Boutique">
             </article>
         </section>
         <h2 class="title text--yellow">NUESTRO RESTAURANTE</h2>
         <section>
             <article class="restaurante">  
-                <div class="restaurante__text" data-aos="fade-left">
+                <div class="restaurante__text" data-aos="fade-right">
                     <h3 class="subtitle text--yellow">MEZCAL</h3><br>
                         <p>
                             Mezcal propone un cocina donde el producto es el protagonista principal, bajo la premisa de que todo lo ofrecido tiene que ser producido en la propia casa, con insumos frescos, orgánicos y de temporada, provenientes de productores locales.
@@ -75,26 +81,46 @@
                             La apuesta es lograr sabores cuidados y reales, y recuperar una alimentación centrada en lo sano y lo natural. Bruma es la Tierra, es el pastizal crudo y el atardecer rojo. Un lugar donde se intenta llegar a la nostalgia y el deseo de vivir una experiencia única.
                         </p>
                 </div>
-                <img class="nosotros__img" data-aos="fade-right" src="./Images/restaurante-mezcal.png" alt="restaurante mezcal">
+                <div id="carouselExampleControls" data-aos="fade-right" class="carousel slide container__carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="nosotros__img" src="./Images/restaurante-mezcal.jpg" alt="restaurante mezcal city hotel Boutique">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="nosotros__img" src="./Images/restaurante-mezcal2.jpg"  alt="restaurante mezcal city hotel Boutique">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="nosotros__img" src="./Images/restaurante-mezcal3.jpg"  alt="restaurante mezcal city hotel Boutique">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </article>
         </section>
         <h2 class="title text--yellow">LOS MEJORES SERVICIOS EN UN SOLO LUGAR</h2>
         <section class="container--card">
-            <article class="card" data-aos="flip-left">
+            <article class="cards" data-aos="flip-left">
                 <img class="card__img" src="./Images/card-spa.jpg" alt="spa">
                 <h3 class="card__title">SPA</h3>
                     <p class="card__text">
                         Propuesta exclusivas diseñadas por nuestro spa manager, donde se combinan la técnicas y tratamientos de los mejores spas del mundo.
                     </p>
             </article>
-            <article class="card" data-aos="flip-left">
+            <article class="cards" data-aos="flip-left">
                 <img class="card__img" src="./Images/card-picina.jpg" alt="picina">
                 <h3 class="card__title">PICINA</h3>
                     <p class="card__text">
                         Un espacio diseñado para que nuestros huéspedes se sientan como en su casa teniendo a su disposición una fabulosa picina al aire libre la cual es climatizada en invierno.                  
                     </p>
             </article>
-            <article class="card" data-aos="flip-left">
+            <article class="cards" data-aos="flip-left">
                 <img class="card__img" src="./Images/card-sala.jpg" alt="sala de reuniones">
                 <h3 class="card__title">SALA DE REUNIONES</h3>
                     <p class="card__text">
@@ -103,8 +129,58 @@
             </article>
         </section>
         <section>
-            <h2 class="title text--yellow">RESEÑAS</h2>
-            <article class="reviews">
+        <h2 class="title text--yellow">RESEÑAS</h2>
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide reviews" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="reviews_text w-100" data-aos="zoom-in">
+                        <p class="text--white">
+                            El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
+                        </p><br>
+                        <p class="text--white">
+                            Alfredo Gomez <br>
+                            Google
+                        </p> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="reviews_text w-100" data-aos="zoom-in">
+                        <p class="text--white">
+                            Fuimos a su restaurante Mezcal. Muy buena propuesta en la hermosa terraza del hotel. Cocina de autor original, rica y muy bien presentada.
+                        </p><br>
+                        <p class="text--white">
+                            Julian Perez <br>
+                            Booking
+                        </p> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="reviews_text w-100" data-aos="zoom-in">
+                        <p class="text--white">
+                            Hermosa experiencia algo único en la ciudad, la atención re linda y la comida riquísima. La experiencias por las piscinas y cascadas, super recomendables y placentero.
+                        </p><br>
+                        <p class="text--white">
+                            Malena Suarez <br>
+                            TripAdvisor
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+            <!-- <article class="reviews">
                     <div class="reviews_text " data-aos="zoom-in">
                         <p class="text--white">
                             El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
@@ -114,7 +190,7 @@
                             Google
                         </p> 
                     </div>
-            </article>
+            </article> -->
         </section>
     </main>
 <!-- FIN MAIN DE LA PAGINA -->
@@ -150,6 +226,7 @@
         </section>   
     </footer>
 <!-- FIN DEL FOOTER -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();

@@ -38,6 +38,8 @@ body {
     font-weight: bold;
     font-size: var(--text-small);
     color: #54585A;
+    line-height: normal;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -46,7 +48,13 @@ a {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
+
+p {
+    margin: 0;
+}
+
 
 main {
     margin: 0 auto;
@@ -54,6 +62,17 @@ main {
 }
 
 /* GENERAL */
+
+.top__text {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--font-title);
+    font-size: 5rem;
+    font-weight: 400;
+    text-shadow: #111 0px 0px 10px;
+    color: var(--base);
+}
 
 .title{
     text-align: center;
@@ -68,7 +87,7 @@ main {
     font-weight: bold;
 }
 
-.form{
+.form1{
     display: flex;
     flex-direction: row;
     justify-content: center;   
@@ -100,13 +119,8 @@ main {
 
 /*HEADER STYLE*/
 
-.header{
-    background-color: var(--secondary);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.header--color {
+    background-color: #54585A;
 }
 
 .header__logo {
@@ -119,15 +133,11 @@ main {
     transform: scale(1.1, 1.1);
 }
 
-.header__nav {
-    width: 50%;
-}
-
 .header__pages {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: space-between;
+    width: 50%;
 }
 
 .header__pages__link {
@@ -178,6 +188,16 @@ main {
     width: 40%;
 }
 
+.container__carousel {
+    height: 36rem;
+    width: 54rem;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
 .restaurante{
     display: flex;
     flex-direction: row-reverse;
@@ -204,7 +224,7 @@ main {
     margin: 5em;
 }
 
-.card{
+.cards{
     background-color: #54585A;
     display: flex;
     flex-direction: column;
@@ -215,7 +235,7 @@ main {
     transition: all .3s linear;
 }
 
-.card:hover {
+.cards:hover {
     transform: scale(1.1, 1.1);
     box-shadow: 0px 0px 10px var(--secondary);
 }
@@ -242,6 +262,9 @@ main {
 .reviews{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .reviews_text{
@@ -254,17 +277,27 @@ main {
     margin: 5rem auto;
     text-align: center;
     border-radius: 15px;
-    padding: 2em;
+    padding: 3rem;
     box-shadow: 0px 0px 10px #54585A;
 }
 
 /*MAIN HABITACIONES STYLE*/
 
+.top__image--room {
+    background-image:url(../Images/habitacion-top-habitaciones.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;  
+}
+
 .room{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     gap: 1em;
     margin: 5em 0;
@@ -274,7 +307,7 @@ main {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     gap: 1em;
     margin: 5em 0;
@@ -290,11 +323,21 @@ main {
 
 /*MAIN SERVICIOS STYLE*/
 
+.top__image--service {
+    background-image:url(../Images/picina-top-servicios.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;  
+}
+
 .service{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     gap: 1em;
     margin: 5em 0;
@@ -304,7 +347,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     gap: 1em;
     margin: 5em 0; 
@@ -319,8 +362,17 @@ main {
     width: 40%;
 }
 
-
 /*MAIN GALERIA STYLE*/
+
+.top__image--galery {
+    background-image:url(../Images/Hotel-top-galeria.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;  
+}
 
 .galery{
     display: grid;
@@ -332,6 +384,16 @@ main {
 }
 
 /*MAIN CONTACTO STYLE*/
+
+.top__image--contact {
+    background-image:url(../Images/frontdesk-contacto.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;  
+}
 
 .contact1{
     display:flex;
@@ -441,6 +503,11 @@ main {
 
 @media (max-width:600px){
 
+.top__text {
+
+    font-size: 4rem;
+}
+    
 .form{
     display: flex;
     flex-direction: column;
@@ -462,13 +529,6 @@ main {
 
 /*HEADER STYLE*/
 
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .header__logo{
     height: 10rem;
     margin: 1rem 0;
@@ -485,10 +545,6 @@ main {
 
 .header__pages__link {
     font-size: 1.6rem;
-}
-
-.header__social__link {
-    display: none;
 }
 
 /* MAIN HOME STYLE*/
@@ -509,6 +565,10 @@ main {
     height: 100%;
     width: 100%;
     padding: 1rem;
+}
+
+.container__carousel {
+    height: auto;
 }
 
 .nosotros__img {
