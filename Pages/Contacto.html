@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- INICIO DEL HEADER -->
-    <header class="navbar navbar-expand-lg header--color">
+    <header class="navbar navbar-expand-md header--color">
         <div class="container-fluid header__nav container">
             <a class="navbar-brand" href="../index.html"><img class="header__logo" src="../Images/logo-hotel.svg" alt="City Hotel Boutique"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
 <!-- FIN DEL HEADER       -->
 <!-- INICIO DEL MAIN -->
     <section class="top__image--contact">
-        <h1 class="top__text">CONTACTO</h1>
+        <h1 class="top__text"><span class="top__background">CONTACTO</span></h1>
     </section>
     <main>
         <section>
@@ -58,13 +58,13 @@
                 <section class="contact" data-aos="zoom-in">
                     <form class="contact__form" action="" method="post">
                         <label class="text--white" for="name">Nombre:</label>
-                        <input type="text" name="name" id="name" required><br><br>
+                        <input class="contact__data" type="text" name="name" id="name" required>
                         <label class="text--white" for="email">Email:</label>
-                        <input type="email" name="email" id="email" required><br><br>
+                        <input class="contact__data" type="email" name="email" id="email" required>
                         <label class="text--white" for="phone">Telefono:</label>
-                        <input type="tel" name="phone" id="phone" required><br><br>
+                        <input class="contact__data" type="tel" name="phone" id="phone" required>
                         <label class="text--white" for="mensaje">Mensaje:</label><br>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br><br>
+                        <textarea class="contact__data" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                         <button type="submit">Enviar</button>
                     </form>
                 </section>

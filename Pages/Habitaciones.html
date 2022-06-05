@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- INICIO DEL HEADER -->
-    <header class="navbar navbar-expand-lg header--color">
+    <header class="navbar navbar-expand-md header--color">
         <div class="container-fluid header__nav container">
             <a class="navbar-brand" href="../index.html"><img class="header__logo" src="../Images/logo-hotel.svg" alt="City Hotel Boutique"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +36,8 @@
     </header> 
 <!-- FIN DEL HEADER       -->
 <!-- MAIN DE LA PAGINA -->
-    <!-- <picture></picture>
-    <img class="top--img" src="../Images/habitacion-top-habitaciones.jpg" alt="seccion habitaciones"> -->
     <section class="top__image--room">
-        <h1 class="top__text">HABITACIONES</h1>
+        <h1 class="top__text"><span class="top__background">HABITACIONES</span></h1>
     </section>
     <main>
         <section>
@@ -129,17 +127,16 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <!-- <img class="room__img" data-aos="fade-left" src="../Images/Jacuzzi-Suite-Deluxe-1.jpg" alt="habitacion Deluxer Jacuzzi"> -->
             </article>
         </section>
         <section class="form1">
-            <form class="form__checkin" action="" method="post">
+            <form class="form__checkin" action="" method="post" data-aos="zoom-in">
                 <label class="text--white" for="check-in">Check In</label>
-                <input type="date" name="check-in" id="check-in" required>
+                <input class="form__data" type="date" name="check-in" id="check-in" required>
                 <label class="text--white" for="check-out">Check Out</label>
-                <input type="date" name="check-out" id="check-out" required>
+                <input class="form__data" type="date" name="check-out" id="check-out" required>
                 <label class="text--white" for="guest">Huéspedes</label>
-                <input class="text--white" type="number" name="guest" id="guest" required>
+                <input class="form__data" class="text--white" type="number" name="guest" id="guest" required>
                 <button type="submit">RESERVAR</button>
             </form>
         </section>

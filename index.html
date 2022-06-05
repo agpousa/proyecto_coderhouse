@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- INICIO DEL HEADER -->
-    <header class="navbar navbar-expand-lg header--color">
+    <header class="navbar navbar-expand-md header--color">
         <div class="container-fluid header__nav container">
             <a class="navbar-brand" href="./index.html"><img class="header__logo" src="./Images/logo-hotel.svg" alt="City Hotel Boutique"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,18 +36,19 @@
     </header>
 <!-- FIN DEL HEADER -->
 <!-- INICIO MAIN DE LA PAGINA -->
-    <img class="home--top--img" src="./Images/Header-home.jpg" alt="imagen home city hotel Boutique">   
+    <section class="top__image--home">
+        <h1 class="top__text"><span class="top__background">CITY HOTEL BOUTIQUE</span></h1>
+        <H2 class="top__text"><span class="top__background">Tu lugar en la ciudad</span></H2>
+    </section>
     <main>
-        <h1 class="title text--yellow">CITY HOTEL BOUTIQUE</h1>
-        <H2 class="title text--yellow">Tu lugar en la ciudad</H2>
-        <section class="form1">
-            <form class="form__checkin" action="" method="post">
+        <section class="form1" >
+            <form class="form__checkin" action="" method="post" data-aos="zoom-in">
                 <label class="text--white" for="check-in">Check In</label>
-                <input type="date" name="check-in" id="check-in" required>
+                <input class="form__data" type="date" name="check-in" id="check-in" required>
                 <label class="text--white" for="check-out">Check Out</label>
-                <input type="date" name="check-out" id="check-out" required>
+                <input class="form__data" type="date" name="check-out" id="check-out" required>
                 <label class="text--white" for="guest">Huéspedes</label>
-                <input type="number" name="guest" id="guest" required>
+                <input class="form__data" type="number" name="guest" id="guest" required>
                 <button type="submit">RESERVAR</button>
             </form>
         </section>
@@ -129,68 +130,57 @@
             </article>
         </section>
         <section>
-        <h2 class="title text--yellow">RESEÑAS</h2>
-        <div id="carouselExampleIndicators" class="carousel carousel-dark slide reviews" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <h2 class="title text--yellow">RESEÑAS</h2>
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide reviews" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="reviews_text w-100" data-aos="zoom-in">
+                            <p class="text--white">
+                                El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
+                            </p><br>
+                            <p class="text--white">
+                                Alfredo Gomez <br>
+                                Google
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews_text w-100" data-aos="zoom-in">
+                            <p class="text--white">
+                                Fuimos a su restaurante Mezcal. Muy buena propuesta en la hermosa terraza del hotel. Cocina de autor original, rica y muy bien presentada.
+                            </p><br>
+                            <p class="text--white">
+                                Julian Perez <br>
+                                Booking
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews_text w-100" data-aos="zoom-in">
+                            <p class="text--white">
+                                Hermosa experiencia algo único en la ciudad, la atención re linda y la comida riquísima. La experiencias por las piscinas y cascadas, super recomendables y placentero.
+                            </p><br>
+                            <p class="text--white">
+                                Malena Suarez <br>
+                                TripAdvisor
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="reviews_text w-100" data-aos="zoom-in">
-                        <p class="text--white">
-                            El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
-                        </p><br>
-                        <p class="text--white">
-                            Alfredo Gomez <br>
-                            Google
-                        </p> 
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="reviews_text w-100" data-aos="zoom-in">
-                        <p class="text--white">
-                            Fuimos a su restaurante Mezcal. Muy buena propuesta en la hermosa terraza del hotel. Cocina de autor original, rica y muy bien presentada.
-                        </p><br>
-                        <p class="text--white">
-                            Julian Perez <br>
-                            Booking
-                        </p> 
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="reviews_text w-100" data-aos="zoom-in">
-                        <p class="text--white">
-                            Hermosa experiencia algo único en la ciudad, la atención re linda y la comida riquísima. La experiencias por las piscinas y cascadas, super recomendables y placentero.
-                        </p><br>
-                        <p class="text--white">
-                            Malena Suarez <br>
-                            TripAdvisor
-                        </p> 
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-            <!-- <article class="reviews">
-                    <div class="reviews_text " data-aos="zoom-in">
-                        <p class="text--white">
-                            El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
-                        </p><br>
-                        <p class="text--white">
-                            Alfredo Gomez <br>
-                            Google
-                        </p> 
-                    </div>
-            </article> -->
         </section>
     </main>
 <!-- FIN MAIN DE LA PAGINA -->

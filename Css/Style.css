@@ -39,7 +39,6 @@ body {
     font-size: var(--text-small);
     color: #54585A;
     line-height: normal;
-    /* overflow-x: hidden; */
 }
 
 a {
@@ -63,15 +62,19 @@ main {
 
 /* GENERAL */
 
+.top__background {
+    background-color:#54585ad3;
+    
+}
+
 .top__text {
-    width: 100%;
     text-align: center;
     padding: 1rem;
     font-family: var(--font-title);
     font-size: 5rem;
     font-weight: 400;
     text-shadow: #111 0px 0px 10px;
-    color: var(--base);
+    color: var(--base); 
 }
 
 .title{
@@ -94,15 +97,42 @@ main {
 }
 
 .form__checkin{
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1%;
-    margin: 2%;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
     background-color: #54585A;
     border-radius: 15px;
+    font-size: 1.4rem;
+}
+
+.form__data {
+    width: 80%;
+    border-radius: 2px;
+    border:#54585A;
+}
+
+.form__checkin button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--primary);
+    font-weight: bold;
+
+
+}
+
+.form__checkin input, textarea {
+    color: #111;
+    font-family: var(--font-text);
+    font-weight: bold;
+    padding: .3rem;
 }
 
 .top--img{
@@ -166,8 +196,16 @@ main {
 
 /* MAIN HOME STYLE*/
 
-.home--top--img{
+.top__image--home {
+    background-image:url(../Images/Header-home.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
+    height: 55rem;
+
 }
 
 .nosotros{
@@ -286,6 +324,7 @@ main {
 .top__image--room {
     background-image:url(../Images/habitacion-top-habitaciones.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,6 +368,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 25rem;  
 }
@@ -370,6 +410,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 25rem;  
 }
@@ -391,6 +432,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 25rem;  
 }
@@ -421,17 +463,41 @@ main {
 .contact{
     display: flex;
     justify-content: center;
-    padding: 2%;
+    margin: 5rem;
 }
 
 .contact__form{
     background-color: #54585A;
-    width: 50%;
+    width: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3%;
+    padding: 1rem;
     border-radius: 15px;
+}
+
+.contact__data {
+    text-align: left;
+    width: 80%;
+    margin: 1rem;
+    border-radius: 5px;
+    border:#54585A;
+}
+
+.contact__form button {
+    width: 30%;
+    border: none;
+    background-color: var(--primary);
+    font-weight: bold;
+
+}
+
+.contact__form input, textarea {
+    color: #111;
+    font-family: var(--font-text);
+    font-weight: bold;
+    padding: .3rem;
+
 }
 
 /*FOOTER STYLE*/
@@ -501,31 +567,72 @@ main {
 
 /* RESPONSIVE */
 
-@media (max-width:600px){
+@media (max-width:1100px) {
 
-.top__text {
+    /*MAIN GALERIA STYLE*/ 
 
-    font-size: 4rem;
+    .galery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5rem 0;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width:950px) {
+
+    .form1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form__checkin{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .form__checkin button {
+        width: 40%;
+    }
+
+    /*MAIN HABITACIONES STYLE*/
+
+.room__text{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.room__img {
+    width: 100%;
+    padding: 1rem;
+}
+
+/*MAIN SERVICIOS STYLE*/
+
+.service__text{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.service__img {
+    width: 100%;
+    padding: 1rem;
 }
     
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
 }
 
-.form__checkin{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-    margin: 5%;
-    background-color: #54585A;
-    border-radius: 15px;
-}
+@media (max-width:767px) {
 
 /*HEADER STYLE*/
 
@@ -546,6 +653,29 @@ main {
 .header__pages__link {
     font-size: 1.6rem;
 }
+
+}
+
+@media (max-width:660px) {
+
+    /*MAIN GALERIA STYLE*/
+
+    .galery{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 5rem 0;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width:600px){
+
+.top__text {
+
+    font-size: 4rem;
+}
+
 
 /* MAIN HOME STYLE*/
 
@@ -584,42 +714,6 @@ main {
     padding: 1rem;
 }
 
-/*MAIN HABITACIONES STYLE*/
-
-.room__text{
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-}
-
-.room__img {
-    width: 100%;
-    padding: 1rem;
-}
-
-/*MAIN SERVICIOS STYLE*/
-
-.service__text{
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-}
-
-.service__img {
-    width: 100%;
-    padding: 1rem;
-}
-
-/*MAIN GALERIA STYLE*/
-
-.galery{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 5rem 0;
-}
-
 /*MAIN CONTACTO STYLE*/
 
 .contact1{
@@ -631,16 +725,16 @@ main {
 .contact{
     display: flex;
     justify-content: center;
-    padding: 2%;
+    margin: 5rem 1rem;
 }
 
 .contact__form{
     background-color: #54585A;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3%;
+    padding: 1rem;
     border-radius: 15px;
 }
 
