@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-text;
+    font-weight: bold;
+    font-size: $text-small;
+    color: #54585A;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}

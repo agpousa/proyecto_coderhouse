@@ -96,7 +96,7 @@ main {
     justify-content: center;   
 }
 
-.form__checkin{
+.form1__checkin{
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -111,13 +111,13 @@ main {
     font-size: 1.4rem;
 }
 
-.form__data {
+.form1__data {
     width: 80%;
     border-radius: 2px;
     border:#54585A;
 }
 
-.form__checkin button {
+.form1__checkin button {
     width: 100%;
     height: 100%;
     border: none;
@@ -128,7 +128,7 @@ main {
 
 }
 
-.form__checkin input, textarea {
+.form1__checkin input, textarea {
     color: #111;
     font-family: var(--font-text);
     font-weight: bold;

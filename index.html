@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="./Images/logo-pestaña.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./Css/Style.css">
+    <!-- <link rel="stylesheet" href="./Css/Style.css"> -->
+    <link rel="stylesheet" href="./Css/translated.css">
     <title>City Hotel Boutique</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto ms-auto header__pages">
-                    <li class="nav-item"><a class="header__pages__link nav-link main--link" href="./index.html">HOME</a></li>
+                    <li class="nav-item"><a class="header__pages__link nav-link header__main--link" href="./index.html">HOME</a></li>
                     <li class="nav-item"><a class="header__pages__link nav-link" href="./Pages/Habitaciones.html">HABITACIONES</a></li>
                     <li class="nav-item"><a class="header__pages__link nav-link" href="./Pages/Servicios.html">SERVICIOS</a></li>
                     <li class="nav-item"><a class="header__pages__link nav-link" href="./Pages/Galeria.html">GALERIA</a></li>
@@ -42,13 +43,13 @@
     </section>
     <main>
         <section class="form1" >
-            <form class="form__checkin" action="" method="post" data-aos="zoom-in">
+            <form class="form1__checkin" action="" method="post" data-aos="zoom-in">
                 <label class="text--white" for="check-in">Check In</label>
-                <input class="form__data" type="date" name="check-in" id="check-in" required>
+                <input class="form1__data" type="date" name="check-in" id="check-in" required>
                 <label class="text--white" for="check-out">Check Out</label>
-                <input class="form__data" type="date" name="check-out" id="check-out" required>
+                <input class="form1__data" type="date" name="check-out" id="check-out" required>
                 <label class="text--white" for="guest">Huéspedes</label>
-                <input class="form__data" type="number" name="guest" id="guest" required>
+                <input class="form1__data" type="number" name="guest" id="guest" required>
                 <button type="submit">RESERVAR</button>
             </form>
         </section>
@@ -108,23 +109,23 @@
         <h2 class="title text--yellow">LOS MEJORES SERVICIOS EN UN SOLO LUGAR</h2>
         <section class="container--card">
             <article class="cards" data-aos="flip-left">
-                <img class="card__img" src="./Images/card-spa.jpg" alt="spa">
-                <h3 class="card__title">SPA</h3>
-                    <p class="card__text">
+                <img class="cards__img" src="./Images/card-spa.jpg" alt="spa">
+                <h3 class="cards__title">SPA</h3>
+                    <p class="cards__text">
                         Propuesta exclusivas diseñadas por nuestro spa manager, donde se combinan la técnicas y tratamientos de los mejores spas del mundo.
                     </p>
             </article>
             <article class="cards" data-aos="flip-left">
-                <img class="card__img" src="./Images/card-picina.jpg" alt="picina">
-                <h3 class="card__title">PICINA</h3>
-                    <p class="card__text">
+                <img class="cards__img" src="./Images/card-picina.jpg" alt="picina">
+                <h3 class="cards__title">PICINA</h3>
+                    <p class="cards__text">
                         Un espacio diseñado para que nuestros huéspedes se sientan como en su casa teniendo a su disposición una fabulosa picina al aire libre la cual es climatizada en invierno.                  
                     </p>
             </article>
             <article class="cards" data-aos="flip-left">
-                <img class="card__img" src="./Images/card-sala.jpg" alt="sala de reuniones">
-                <h3 class="card__title">SALA DE REUNIONES</h3>
-                    <p class="card__text">
+                <img class="cards__img" src="./Images/card-sala.jpg" alt="sala de reuniones">
+                <h3 class="cards__title">SALA DE REUNIONES</h3>
+                    <p class="cards__text">
                         Propuesta exclusivas diseñadas por nuestro spa manager, donde se combinan la técnicas y tratamientos de los mejores spas del mundo.
                     </p>
             </article>
@@ -139,7 +140,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="reviews_text w-100" data-aos="zoom-in">
+                        <div class="reviews__text w-100" data-aos="zoom-in">
                             <p class="text--white">
                                 El lugar mejor que en fotos...el desayuno fantástico y el personal excelente...sin dudas un lugar para recomendar estas en el centro de Bs. As.
                             </p><br>
@@ -150,7 +151,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="reviews_text w-100" data-aos="zoom-in">
+                        <div class="reviews__text w-100" data-aos="zoom-in">
                             <p class="text--white">
                                 Fuimos a su restaurante Mezcal. Muy buena propuesta en la hermosa terraza del hotel. Cocina de autor original, rica y muy bien presentada.
                             </p><br>
@@ -161,7 +162,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="reviews_text w-100" data-aos="zoom-in">
+                        <div class="reviews__text w-100" data-aos="zoom-in">
                             <p class="text--white">
                                 Hermosa experiencia algo único en la ciudad, la atención re linda y la comida riquísima. La experiencias por las piscinas y cascadas, super recomendables y placentero.
                             </p><br>
@@ -205,7 +206,7 @@
             </article>
                 <nav class="footer__nav">
                     <ul class="footer__nav__pages">
-                        <li><a class="footer__pages__link main--link" href="./index.html">HOME</a></li>
+                        <li><a class="footer__pages__link footer__main--link" href="./index.html">HOME</a></li>
                         <li><a class="footer__pages__link" href="./Pages/Habitaciones.html">HABITACIONES</a></li>
                         <li><a class="footer__pages__link" href="./Pages/Servicios.html">SERVICIOS</a></li>
                         <li><a class="footer__pages__link" href="./Pages/Galeria.html">GALERIA</a></li>
