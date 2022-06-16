@@ -1,12 +1,18 @@
 /*colors*/
-$primary: #F8B500;
-$secondary: #54585A;
-$base: #ffffff;
+$colors:(
+    primary: #F8B500,
+    secondary: #54585A,
+    base: #ffffff
+);
+
+
 /*spacings*/
 $spacings-small: 1;
+
 /*font-family*/
 $font-title: 'Cormorant', serif;
 $font-text: 'Inter', sans-serif;
+
 /*font-sizes*/
 $text-small: 1.6rem;
 $text-medium: 4rem;

@@ -5,7 +5,7 @@
     font-size: 5rem;
     font-weight: 400;
     text-shadow: #111 0px 0px 10px;
-    color: $base;
+    color: map-get($colors, base);
     
     .top__background {
         background-color:#54585ad3;  
@@ -55,7 +55,7 @@
             height: 100%;
             border: none;
             border-radius: 2px;
-            background-color: $primary;
+            background-color: map-get($colors, primary);
             font-weight: bold;
         }
 
@@ -73,15 +73,15 @@
 }
 
 .text--yellow{
-    color: $primary;
+    color: map-get($colors, primary);
 }
 
 .text--white{
-    color: $base;
+    color: map-get($colors, base);
 }
 
 .main--link {
-    color: $primary;
+    color: map-get($colors, primary);
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {

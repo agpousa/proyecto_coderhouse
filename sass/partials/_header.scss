@@ -19,7 +19,7 @@
     width: 50%;
     &__link {
         text-decoration: none;
-        color: $base;
+        color: map-get($colors, base);
         font-size: 1.2rem;
         transition: all .1s linear;
     }
@@ -29,7 +29,7 @@
 }
 
 .header__pages__link:hover {
-    color: $primary;
+    color: map-get($colors, primary);
 }
 
 .header__social__link {

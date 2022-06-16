@@ -54,7 +54,7 @@
 }
 
 .footer__pages__link:hover {
-    color: $primary;
+    color: map-get($colors, primary);
 }
 
 .footer__main--link {
