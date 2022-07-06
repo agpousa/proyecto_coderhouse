@@ -1,20 +1,14 @@
 .top__image--home {
     @include flex (column, center);
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     background-image:url(../Images/Header-home.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 55rem;
+    height: 100vh;
 }
 
 .nosotros{
     @include flex (row, space-around);
-    // display: flex;
-    // flex-direction: row;
-    // justify-content:space-around;
     flex-wrap: wrap;
     align-items:center;
     gap: 1em;
@@ -31,9 +25,6 @@
 
 .restaurante{
     @include flex (row-reverse, space-around);
-    // display: flex;
-    // flex-direction: row-reverse;
-    // justify-content:space-around;
     flex-wrap: wrap;
     align-items:center;
     gap: 1em;
@@ -41,11 +32,6 @@
 
     &__text{
         @extend .nosotros__text;
-        // display: flex;
-        // flex-direction: column;
-        // text-align: left;
-        // height: 100%;
-        // width: 40%;
     }
 
     .container__carousel {
@@ -122,6 +108,10 @@
 // Responsive
 
 @media (max-width:600px){
+
+    .top__image--home {
+        height: 85vh;
+    }
 
     .nosotros {
         &__text{
